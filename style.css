@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background-color: #34c759;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0acc44;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.contact-details div i {
+    margin-right: 10px;
+    color: green;
+    font-size: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    color: green;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: darkgreen;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.form input,
+.form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form button {
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: darkgreen;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .contact-info {
+        flex: 1;
+        align-items: flex-start;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .form {
+        flex: 1;
+    }
+
+    .contact-details {
+        align-items: flex-start;
+    }
+
+    .socials {
+        justify-content: flex-start;
+    }
+}
